@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f4f4f4; -fx-padding: 20px;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.DashboardClienteController">
+   <children>
+      <VBox alignment="CENTER" spacing="15" layoutX="50" layoutY="50" prefWidth="300" prefHeight="250" AnchorPane.topAnchor="50" AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50" AnchorPane.bottomAnchor="50">
+         <children>
+            <Label fx:id="labelNomeUsuario" text="Bem-vindo, [Nome]" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+            <Button fx:id="btnAgendar" mnemonicParsing="false" onAction="#abrirTelaAgendamento" text="Agendar Serviço" style="-fx-background-color: #007bff; -fx-text-fill: white; -fx-font-size: 14px;" />
+            <Button fx:id="btnHistorico" mnemonicParsing="false" onAction="#abrirTelaHistorico" text="Meus Agendamentos" style="-fx-background-color: #28a745; -fx-text-fill: white; -fx-font-size: 14px;" />
+            <Button fx:id="btnPerfil" mnemonicParsing="false" onAction="#abrirTelaPerfil" text="Editar Perfil" style="-fx-background-color: #ffc107; -fx-text-fill: black; -fx-font-size: 14px;" />
+            <Button fx:id="btnSair" mnemonicParsing="false" onAction="#sair" text="Sair" style="-fx-background-color: #dc3545; -fx-text-fill: white; -fx-font-size: 14px;" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

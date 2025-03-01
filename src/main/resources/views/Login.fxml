@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f4f4f4; -fx-padding: 20px;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.LoginController">
+   <children>
+      <VBox alignment="CENTER" spacing="15" layoutX="50" layoutY="50" prefWidth="300" prefHeight="250" AnchorPane.topAnchor="50" AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50" AnchorPane.bottomAnchor="50">
+         <children>
+            <TextField fx:id="emailField" promptText="Email" style="-fx-font-size: 14px;" />
+            <PasswordField fx:id="passwordField" promptText="Senha" style="-fx-font-size: 14px;" />
+            <Button mnemonicParsing="false" onAction="#handleLogin" text="Entrar" style="-fx-background-color: #007bff; -fx-text-fill: white; -fx-font-size: 14px;" />
+            <Button mnemonicParsing="false" onAction="#handleCadastro" text="Cadastrar" style="-fx-background-color: #28a745; -fx-text-fill: white; -fx-font-size: 14px;" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
