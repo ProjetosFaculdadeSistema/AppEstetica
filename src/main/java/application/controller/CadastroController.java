@@ -41,7 +41,7 @@ public class CadastroController {
             return;
         }
 
-        // ✅ Agora o usuário é salvo no banco de dados
+        // Agora o usuário é salvo no banco de dados
         Usuario usuario = new Usuario(nome, email, senha);
         boolean sucesso = UsuarioDAO.cadastrarUsuario(usuario);
 

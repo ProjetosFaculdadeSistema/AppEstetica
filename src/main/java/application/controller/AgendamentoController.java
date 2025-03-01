@@ -63,13 +63,13 @@ public class AgendamentoController {
             return;
         }
 
-        // ✅ Obtém o email do usuário logado
+        // Obtém o email do usuário logado
         String clienteEmail = SessaoUsuario.getUsuarioLogado().getEmail();
 
-        // ✅ Criando um agendamento com o construtor correto
+        // Criando um agendamento com o construtor correto
         Agendamento agendamento = new Agendamento(clienteEmail, servico, data, horario);
 
-        // ✅ Salvar o agendamento no banco de dados
+        // Salvar o agendamento no banco de dados
         boolean sucesso = AgendamentoDAO.salvarAgendamento(agendamento);
 
         if (sucesso) {
